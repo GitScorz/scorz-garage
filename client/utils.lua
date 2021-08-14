@@ -73,7 +73,3 @@ Citizen.CreateThread(function()
 		EndTextCommandSetBlipName(blip)
 	end
 end)
-
-RegisterCommand("geth", function()
-	print(GetEntityHeading(player))
-end)
