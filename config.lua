@@ -11,7 +11,7 @@ Config.AcessGarageKey = 38 -- Default [E] dont forget to change in lang.lua
 Config.AccessImpoundKey = 74 -- Default [H] dont forget to change in lang.lua
 Config.SaveGarageCarKey = 38 -- Default [E] dont forget to change in lang.lua
 
---[[ GERAL ]]--
+--[[ GENERAL ]]--
 Config.MenuAlign = "center" -- Change the location of the menu (center, top-left, top-right, bottom-right, bottom-left..)
 Config.DrawDistance = 8.0 -- Distance to show marker etc
 Config.UseVehicleShop = false -- Set to true if you use esx_vehicleshop
