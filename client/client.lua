@@ -13,10 +13,6 @@ Citizen.CreateThread(function()
     end
 end)
 
-RegisterCommand("f", function()
-  FreezeEntityPosition(player, false)
-end)
-
 Citizen.CreateThread(function()
     while true do
       Citizen.Wait(5)
