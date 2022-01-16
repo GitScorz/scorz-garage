@@ -190,7 +190,7 @@ function ImpoundThing()
 
                   exports['progressBars']:startUI(2500, "GETTING VEHICLE")
                   Wait(2500)
-                  ESX.Game.SpawnLocalVehicle(data.current.value, spawnpoint, spawnHeading, function(car)
+                  ESX.Game.SpawnVehicle(data.current.value, spawnpoint, spawnHeading, function(car)
                     vehVehicle = car
 
                     SetVehicleProperties(car, vehicleProps, color1, color2)
@@ -277,7 +277,7 @@ function OpenGarageMenu(garage, spawn, spawnHeading)
             local color1 = vehicleProps.color1
             local color2 = vehicleProps.color2
 
-            ESX.Game.SpawnLocalVehicle(vehicleProps["model"], spawnpoint, spawnHeading, function(car)
+            ESX.Game.SpawnVehicle(vehicleProps["model"], spawnpoint, spawnHeading, function(car)
               vehVehicle = car
 
               SetVehicleProperties(car, vehicleProps, color1, color2)
