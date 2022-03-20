@@ -190,7 +190,7 @@ function ImpoundThing()
 
                   exports['progressBars']:startUI(2500, "GETTING VEHICLE")
                   Wait(2500)
-                  ESX.Game.SpawnVehicle(data.current.value, spawnpoint, spawnHeading, function(car)
+                  ESX.Game.SpawnVehicle(vehicleProps["model"], spawnpoint, spawnHeading, function(car)
                     vehVehicle = car
 
                     SetVehicleProperties(car, vehicleProps, color1, color2)
