@@ -310,11 +310,12 @@ function OpenSaveMenu(garage, veh)
     }
   }, function(data, menu)
     local value = data.current.value
+    local fuelLevel = exports["LegacyFuel"]:GetFuel(current)
 
     if value == 'yes' then
       ESX.UI.Menu.CloseAll()
       FreezeEntityPosition(veh, false)
-      SaveInGarage(garage)
+      SaveInGarage(garage, fuelLevel)
       notify(Lang['stored_in_garage']:format(garage))
     end
     
